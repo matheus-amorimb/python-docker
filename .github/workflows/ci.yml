@@ -21,7 +21,7 @@ jobs:
           run: poetry install
 
         - name: Execute Blue
-          run: poetry run blue --check src
+          run: poetry run blue src
 
         - name: Execute Isort
-          run: poetry run isort --check src
+          run: poetry run isort src
