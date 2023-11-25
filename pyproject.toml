@@ -15,7 +15,16 @@ sqlalchemy = "^2.0.23"
 ignr = "^2.2"
 blue = "^0.9.1"
 isort = "^5.12.0"
+taskipy = "^1.12.2"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+line_length = 79
+
+[tool.taskipy.tasks]
+lint = "blue --check --diff . && isort --check --diff ."
+format = "blue . && isort ."
