@@ -24,4 +24,4 @@ jobs:
           run: poetry run blue --check src
 
         - name: Execute Isort
-          run: poetry run isort -check src
+          run: poetry run isort --check src
