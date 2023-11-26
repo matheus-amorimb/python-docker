@@ -16,6 +16,9 @@ ignr = "^2.2"
 blue = "^0.9.1"
 isort = "^5.12.0"
 taskipy = "^1.12.2"
+mypy = "^1.7.1"
+ruff = "^0.1.6"
+pre-commit = "^3.5.0"
 
 [build-system]
 requires = ["poetry-core"]
