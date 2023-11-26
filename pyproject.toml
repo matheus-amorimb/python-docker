@@ -31,3 +31,5 @@ line_length = 79
 [tool.taskipy.tasks]
 lint = "blue --check --diff . && isort --check --diff ."
 format = "blue . && isort ."
+build = 'docker build --tag python-docker .'
+run = 'docker run --rm -p 5000:5000 python-docker'
